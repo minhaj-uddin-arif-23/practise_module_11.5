@@ -1,9 +1,8 @@
 from django.shortcuts import render
-
 # Create your views here.
-
 def index(request):
     data = [
+        
         {
             "strMeal": "BeaverTails",
             "strMealThumb": "https://www.themealdb.com/images/media/meals/ryppsv1511815505.jpg",
@@ -55,4 +54,4 @@ def index(request):
             "idMeal": "52925"
         }
     ]
-    return render(request,'index.html',{'data':data})
+    return render(request,'index.html',{'meals':data})
